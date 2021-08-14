@@ -1,0 +1,195 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: Assignment
+index: active
+---
+
+<div class="assignment container">
+  <div class="row mt-5 gx-3">
+    <div class="hstack justify-content-between">
+      <div class="wrap">
+        <a
+          class="nav-link dropdown-toggle fw-bold ps-0"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >All (4)</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <h8 class="nav-link text-end text-muted fs-8 pe-0">2 comments</h8>
+    </div>
+    <div class="col-4">
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action bg-light px-2 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between fs-8">
+            <h5 class="mb-1 fs-8">Chapter Assignment 2</h5>
+            <small>3 days ago</small>
+          </div>
+          <div class="hstack justify-content-between">
+            <p class="mb-0 fw-bold">Please check this file…</p>
+            <small class="text-muted fs-8">Emily Wang</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action px-2 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between fs-8">
+            <h5 class="mb-1 fs-8">Chapter Assignment 1</h5>
+            <small>12 hrs ago</small>
+          </div>
+          <div class="hstack justify-content-between">
+            <p class="mb-0 fw-bold">My Homework</p>
+            <small class="text-muted fs-8">David Xu</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action px-2 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between fs-8">
+            <h5 class="mb-1 fs-8">Final Assignment</h5>
+            <small>18 hrs ago</small>
+          </div>
+          <div class="hstack justify-content-between">
+            <p class="mb-0 fw-bold text-truncate">Have a problem with this…</p>
+            <small class="text-muted fs-8">Tony Wei</small>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action px-2 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex w-100 justify-content-between fs-8">
+            <h5 class="mb-1 fs-8">Final Assignment</h5>
+            <small>19 hrs ago</small>
+          </div>
+          <div class="hstack justify-content-between">
+            <p class="mb-0 fw-bold">Did I do it right?</p>
+            <small class="text-muted fs-8">Christina Lin</small>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="card">
+        <div class="card-header hstack justify-content-between py-3">
+          <div class="">
+            <h5 class="mb-1 fs-8">Chapter Assignment 2 / HTML&CSS</h5>
+            <p class="mb-0 fw-bold">Please check this file for me, thanks!</p>
+          </div>
+          <a href="#"
+            ><span class="material-icons">
+              more_vert
+            </span></a
+          >
+        </div>
+        <div class="card-body">
+          <div class="user hstack">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+              alt=""
+              width="40"
+              height="40"
+              class="head rounded-circle me-2"
+            />
+            <div class="data">
+              <h2 class="name fw-bold fs-6 m-0">Emily Wang</h2>
+              <small class="email text-muted fs-7"
+                >10:38 AM (4 hours ago)</small
+              >
+            </div>
+          </div>
+          <div class="content border-bottom ms-7 mt-3 fs-7 pb-3">
+            <p>
+              Hi Teacher, the attached file is my homework of chapter 2. And
+              here comes a question: Why in the following code the height of the
+              div is bigger than the height of the img ? There is a gap below
+              the image, but it doesn’t seems to be a padding/margin. <br />
+              What is the gap or extra space below image?
+            </p>
+            <button class="btn btn-light border hstack">
+              <span class="material-icons"> attach_file </span
+              ><span>HW-2-David.zip</span>
+            </button>
+          </div>
+
+          <div class="hstack justify-content-between mt-3">
+            <div class="user hstack">
+              <img
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                alt=""
+                width="40"
+                height="40"
+                class="head rounded-circle me-2"
+              />
+              <div class="data">
+                <h2 class="name fw-bold fs-6 m-0">Andy Chen (You)</h2>
+                <small class="email text-muted fs-7"
+                  >13:24 AM (1 hours ago)</small
+                >
+              </div>
+            </div>
+            <div class="edit">
+              <span class="material-icons-outlined"> grade </span
+              ><span class="material-icons ms-4">
+                edit
+              </span>
+            </div>
+          </div>
+          <div class="content ms-7 mt-3 fs-7">
+            <p>
+              Hi David, by default, an image is rendered inline, like a letter
+              so it sits on the same line that a, b, c and d sit on. There is
+              space below that line for the descenders you find on letters like
+              g, j, p and q.<br /><br />
+              You can: <br /><br />
+              • adjust the vertical-align of the image to position it elsewhere
+              (e.g. the middle ) or <br />
+              • change the display so it isn’t inline.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer hstack justify-content-between mb-5 mt-3">
+        <div class="page hstack">
+          <a href="#"><span class="material-icons me-4"> chevron_left </span></a
+          ><a href=""
+            ><span class="material-icons">
+              chevron_right
+            </span></a
+          >
+        </div>
+        <div class="buttons hstack">
+          <button class="btn btn-outline-success">Mark as read</button
+          ><button
+            class="btn btn-success ms-3"
+            onclick="location.href='assignment-edit.html'"
+          >
+            Reply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
