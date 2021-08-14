@@ -1,11 +1,150 @@
----
-title: Admin
-layout: ./app/layout-add.ejs
-engine: ejs
-current: Admin
-admin: active
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <div class="container-xxl">
+      <div class="row g-0 vh-100">
+        <div class="side col-3 py-5 bg-light vstack justify-content-between">
+          <div class="menu">
+            <div class="icon ps-5">
+              <h1 class="title mb-5 mt-2">ANSWER</h1>
+            </div>
+            <ul class="nav flex-column fw-bold">
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> assessment </span
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> question_answer </span
+                  >Question</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="index.html"
+                  ><span class="material-icons me-3"> assignment </span
+                  >Assignment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> video_library </span
+                  >Course</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5 active"
+                  aria-current="page"
+                  href="admin.html"
+                  ><span class="material-icons me-3"> people </span>Admin</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> settings </span
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="user hstack ps-5">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+              alt=""
+              class="head rounded-circle me-3"
+            />
+            <div class="data">
+              <h2 class="name fw-bold fs-6 m-0">Andy Chen</h2>
+              <small class="email text-muted fs-7">andy0401@mail.com</small>
+            </div>
+          </div>
+        </div>
+        <!-- nav-bar -->
+        <div class="main container col-9 p-5 position-relative">
+          <div class="d-flex align-items-center justify-content-between">
+            <ul class="nav align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold fs-4 me-3 px-0"
+                  aria-current="page"
+                  href="#"
+                  >Admin</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link hstack fw-bold"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newModal"
+                  ><span class="material-icons text-success fw-bold me-2">
+                    add </span
+                  >Add New Admin</a
+                >
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><span class="material-icons">
+                    search
+                  </span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-0"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  ><span class="material-icons">
+                    notifications_active
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+          
 <table class="admin table table-hover align-middle">
   <thead>
     <tr>
@@ -437,3 +576,152 @@ admin: active
     </div>
   </div>
 </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- newModal -->
+    <div
+      class="modal fade"
+      id="newModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 px-6">
+            <h5 class="modal-title fw-bold" id="exampleModalLabel">
+              New Admin
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-6">
+            <h5 class="account fw-bold">Account</h5>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="mb-1 fs-7">Name</label>
+                <input
+                  type="text"
+                  class="form-control py-3"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="mb-1 fs-7">Email</label>
+                <input
+                  type="email"
+                  class="form-control py-3"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <hr />
+              <h5 class="fw-bold">Verification</h5>
+              <div class="hstack">
+                <span class="material-icons text-danger me-2">warning</span>
+                <h6 class="fw-bold mb-0">Unverified</h6>
+                <small class="ms-auto">2020/4/12</small>
+              </div>
+              <button class="btn btn-outline-success w-100 mt-3 mb-2 py-3">
+                Send Verification Mail
+              </button>
+              <hr />
+              <h5 class="fw-bold">Access Level</h5>
+              <select
+                class="form-select form-select-lg mb-4 mt-2"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <hr />
+              <h5 class="fw-bold mb-3">Custom Access</h5>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Message
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Task Menu
+                </label>
+              </div>
+              <div class="modal-footer border-0 px-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="button" class="btn btn-success ms-3">Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

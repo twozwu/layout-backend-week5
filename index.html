@@ -1,11 +1,156 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: Assignment
-index: active
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Boostrap Index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <div class="container-xxl">
+      <div class="row g-0 vh-100">
+        <div class="side col-3 py-5 bg-light vstack justify-content-between">
+          <div class="menu">
+            <div class="icon ps-5">
+              <h1 class="title mb-5 mt-2">ANSWER</h1>
+            </div>
+            <ul class="nav flex-column fw-bold">
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> assessment </span
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> question_answer </span
+                  >Question</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5 active"
+                  aria-current="page"
+                  href="index.html"
+                  ><span class="material-icons me-3"> assignment </span
+                  >Assignment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> video_library </span
+                  >Course</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="admin.html"
+                  ><span class="material-icons me-3"> people </span>Admin</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center ps-5"
+                  aria-current="page"
+                  href="#"
+                  ><span class="material-icons me-3"> settings </span
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="user hstack ps-5">
+            <img
+              src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+              alt=""
+              class="head rounded-circle me-3"
+            />
+            <div class="data">
+              <h2 class="name fw-bold fs-6 m-0">Andy Chen</h2>
+              <small class="email text-muted fs-7">andy0401@mail.com</small>
+            </div>
+          </div>
+        </div>
+        <!-- nav-bar -->
+        <div class="main container col-9 p-5 position-relative">
+          <div class="d-flex align-items-center justify-content-between">
+            <ul class="nav align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold fs-4 me-3 px-0"
+                  aria-current="page"
+                  href="#"
+                  >Assignment</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >All Courses</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><span class="material-icons">
+                    search
+                  </span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link pe-0"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  ><span class="material-icons">
+                    notifications_active
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+          
 <div class="assignment container">
   <div class="row mt-5 gx-3">
     <div class="hstack justify-content-between">
@@ -193,3 +338,12 @@ index: active
     </div>
   </div>
 </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
